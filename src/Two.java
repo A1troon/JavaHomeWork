@@ -2,7 +2,7 @@ public class Two {
     private static int heapSize;
     public static void main(String []args){
         int[] array = new int[]{3, 1, 5, 3, 2, 7, 9, 1, 2};
-        InsertionSort(array);
+        HeapSort(array);
         for(var val : array){
             System.out.print(val + " ");
         }
@@ -43,21 +43,6 @@ public class Two {
         array[first]^=array[second];
         array[second]^=array[first];
         array[first]^=array[second];
-    }
-    private static void InsertionSort(int[] array){
-        for (int i = 0; i < array.length; i++) {
-            int value = array[i];
-            int j = i - 1;
-            for (;; j--) {
-                if ( j >= 0 && value < array[j]) {
-                    array[j + 1] = array[j];
-                } else {
-                    array[j + 1] = value;
-                    break;
-                }
-            }
-        }
-
     }
 
 }
