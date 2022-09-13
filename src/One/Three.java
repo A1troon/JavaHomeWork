@@ -1,3 +1,5 @@
+package One;
+
 public class Three {
     public static void main(String []args){
         int[] array = new int[]{3, 1, 5, 3, 2, 7, 9, 1, 2};
